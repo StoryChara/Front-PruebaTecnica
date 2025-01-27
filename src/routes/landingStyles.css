@@ -3,7 +3,7 @@
   background-image: url('../components/image-header.jpg'); 
   background-size: cover;
   background-position: center;
-  padding: 50px 0px 150px 0px; 
+  padding: 50px 15px; /* Ajuste de padding para pantallas pequeñas */
 }
 
 .overlay {
@@ -31,17 +31,19 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 15px; 
+  padding: 0 15px; 
+  flex-wrap: wrap; /* Permitir el ajuste en pantallas pequeñas */
 }
 
 .desktop-menu {
   display: flex;
+  flex-wrap: wrap; /* Permitir el ajuste en pantallas pequeñas */
 }
 
 .Text-Link {
   margin: 0 15px;
   color: #FFFFFF;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   transition: color 0.3s;
 }
@@ -57,7 +59,7 @@ body {
 
 .social a {
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 2rem;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -65,7 +67,6 @@ body {
 .social a:hover {
   color: #007BFF;
 }
-
 
 .title-container {
   text-align: center;
@@ -77,30 +78,21 @@ body {
   font-size: 74px;
   font-weight: 700;
   line-height: 84px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  max-width: 50%; 
-  margin-left: auto;
-  margin-right: auto; 
+  letter-spacing: 0.2px;
+  max-width: 90%; /* Aumentar el ancho máximo en pantallas pequeñas */
+  margin: 0 auto;
 }
 
 .title-container h4 {
   font-size: 28px;
   font-weight: 400;
   line-height: 40px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  letter-spacing: 0.2px;
   font-size: 1.2rem;
   margin-bottom: 20px;
-  max-width: 31%; 
-  margin-left: auto;
-  margin-right: auto; 
+  max-width: 90%; /* Aumentar el ancho máximo en pantallas pequeñas */
+  margin: 0 auto;
 }
-
 
 button, .form button {
   display: block;
@@ -121,87 +113,57 @@ button:hover {
 }
 
 .content {
-  width: Fill (1,777px)px;
-  height: Hug (1,361.3px)px;
-  gap: 80px;
-  opacity: 0px;
   padding: 20px;
   margin: 20px auto;
-  max-width: 50%;
-  width: 100%;
+  max-width: 90%; /* Aumentar el ancho máximo en pantallas pequeñas */
   border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto; 
 }
 
-.content .text-content{
-  width: Hug (552px)px;
-  height: Hug (182px)px;
-  gap: 7px;
-  opacity: 0px;
+.content .text-content {
+  padding: 10px;
 }
 
 .content h2 {
   font-size: 48px;
   font-weight: 400;
   line-height: 55px;
-  letter-spacing: 0.20000000298023224px;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 .content h4 {
   font-size: 28px;
   font-weight: 400;
   line-height: 40px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none; 
-  max-width: 60%;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .items {
   display: flex;
   margin-top: 20px;
-  width: Hug (869px)px;
-  height: Hug (257px)px;
-  gap: 52px;
-  opacity: 0px;
+  flex-wrap: wrap; /* Permitir el ajuste en pantallas pequeñas */
+  justify-content: center; /* Centrar en pantallas pequeñas */
 }
 
 .items h3 {
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
-  letter-spacing: 0.10000000149011612px;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 .items p {
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
-  letter-spacing: 0.20000000298023224px;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 .feature-style-2 {
-  width: Fixed (255px)px;
-  height: Hug (257px)px;
-  gap: 10px;
-  opacity: 0px;
   padding: 15px;
   text-align: center;
   max-width: 60%;
+  margin: 0 auto; /* Centrar en pantallas pequeñas */
 }
 
 .feature-style-2 .simbolo {
@@ -229,12 +191,14 @@ button:hover {
 
 .container {
   display: flex;
+  flex-wrap: wrap; /* Permitir el ajuste en pantallas pequeñas */
   gap: 20px;
 }
 
 .container .left, .container .right {
   flex: 1 1 45%;
   padding: 20px;
+  min-width: 300px; /* Ancho mínimo para columnas */
 }
 
 .form {
@@ -264,34 +228,28 @@ button:hover {
 
 .row {
   display: flex;
-  width: Hug (1,228px)px;
-  height: Hug (669px)px;
-  gap: 50px;
-  opacity: 0px;
+  flex-direction: row; 
+  width: 100%; /* Usar 100% en lugar de un ancho fijo */
+  margin: 0 auto; /* Centrar en pantallas pequeñas */
+  flex-wrap: wrap; /* Permitir el ajuste en pantallas pequeñas */
 }
 
 .row .left {
   flex: 1;
-  max-width: 25%;
-  width: Fill (453px)px;
-  height: Hug (669px)px;
-  padding: 52px 50px 52px 50px;
-  border-radius: 20px 0px 0px 0px;
-  opacity: 0px;  
+  padding: 20px; /* Padding ajustado */
+  border-radius: 10px;
   background: #FFFFFF;
   border: 1px solid #DDDDDD;
-  border-radius: 10px;
   box-shadow: 0px 13px 19px 0px #00000012;
 }
 
 .row .right {
   flex: 3;
-  max-width: 75%;
+  padding: 20px; /* Padding ajustado */
 }
 
 .row .right .block {
-  max-width: 33%;
-  opacity: 0px;
+  max-width: 100%; /* Usar 100% en lugar de un ancho fijo */
   display: flex;
   flex-direction: column; 
 }
@@ -300,12 +258,10 @@ button:hover {
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
-  letter-spacing: 0.1px; 
   text-align: center; 
 }
 
-.row .right .screen-content{
-  opacity: 0px; 
+.row .right .screen-content {
   margin-bottom: 15px; 
 }
 
@@ -337,10 +293,8 @@ button:hover {
 
 .footer .content {
   display: flex;
-  max-width: 50%; 
-  width: 100%;
-  margin-left: auto; 
-  margin-right: auto;
+  flex-wrap: wrap; /* Permitir el ajuste en pantallas pequeñas */
+  max-width: 90%; /* Aumentar el ancho máximo en pantallas pequeñas */
   justify-content: space-between; 
   align-items: flex-start;
 }
@@ -348,15 +302,13 @@ button:hover {
 .footer .desktop-menu {
   flex: 60%; 
   display: flex;
-  flex-direction: row;
-  justify-content: space-between; 
+  flex-wrap: wrap; /* Permitir el ajuste en pantallas pequeñas */
 }
 
 .footer .row {
   flex: 40%; 
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
   text-align: left; 
 }
@@ -367,13 +319,8 @@ button:hover {
 }
 
 .footer .desktop-menu .menu-style-2 h3 {
-  width: auto;
-  height: auto; 
-  padding: 10px 0px;
-  gap: 10px;
-  opacity: 1; 
+  padding: 10px 0;
   font-size: 20px;
-  margin-bottom: 10px; 
 }
 
 .footer .desktop-menu .menu-style-2 ul {
@@ -415,5 +362,89 @@ button:hover {
 }
 
 .footer .row .social a:hover {
-  color: #8d8d8d; 
+  color: #007BFF; 
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .title-container h1 {
+    font-size: 40px; 
+  }
+  
+  .title-container h4 {
+    font-size: 18px; 
+  }
+  
+  .navbar {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .desktop-menu {
+    justify-content: center; 
+    width: 100%;
+  }
+
+  .content {
+    padding: 10px; 
+  }
+
+  .items {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .footer .desktop-menu, .footer .row {
+    flex: 100%; 
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px; 
+  }
+
+  .title-container h1 {
+    font-size: 30px; 
+  }
+  
+  .title-container h4 {
+    font-size: 16px; 
+  }
+
+  button {
+    font-size: 0.8rem; 
+  }
+
+  .content h2 {
+    font-size: 24px; 
+  }
+
+  .items h3 {
+    font-size: 18px; 
+  }
+
+  .items p {
+    font-size: 16px; 
+  }
+
+  .footer .desktop-menu h3 {
+    font-size: 18px; 
+  }
+
+  .footer .desktop-menu li {
+    font-size: 14px; 
+  }
+
+  .footer .row .adress {
+    font-size: 14px; 
+  }
+
+  .footer .row .social a {
+    font-size: 18px; 
+  }
 }

@@ -10,7 +10,20 @@ const Landing = () => {
       <div class="background-container">
       <div class="overlay"></div>
         <div class="navbar">
-          
+          <div class="desktop-menu">
+            <div class="Text-Link">Home</div>
+            <div class="Text-Link">Product</div>
+            <div class="Text-Link">Pricing</div>
+            <div class="Text-Link">About</div>
+            <div class="Text-Link">Contact</div>
+          </div>
+
+          <div className="social">
+            <a href="https://twitter.com"><FontAwesomeIcon icon={faTwitter} /></a>
+            <a href="https://facebook.com"><FontAwesomeIcon icon={faSquareFacebook} /></a>
+            <a href="https://linkedin.com"><FontAwesomeIcon icon={faLinkedin} /></a>
+          </div>
+
         </div>
 
         <div class="title-container">

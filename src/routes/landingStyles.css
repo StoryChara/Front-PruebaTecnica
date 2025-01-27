@@ -3,7 +3,7 @@
   background-image: url('../components/image-header.jpg'); 
   background-size: cover;
   background-position: center;
-  padding: 150px; 
+  padding: 50px 0px 150px 0px; 
 }
 
 .overlay {
@@ -13,7 +13,7 @@
   z-index: 1; 
 }
 
-.title-container, .navbarm, button {
+.title-container, .navbar, button {
   position: relative; 
   z-index: 2;
 }
@@ -26,6 +26,46 @@ body {
   background-color: #f9f9f9;
   color: #333;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px; 
+}
+
+.desktop-menu {
+  display: flex;
+}
+
+.Text-Link {
+  margin: 0 15px;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.Text-Link:hover {
+  color: #007BFF;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+}
+
+.social a {
+  color: #FFFFFF;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social a:hover {
+  color: #007BFF;
+}
+
 
 .title-container {
   text-align: center;
@@ -292,17 +332,17 @@ button:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center; /* Centra el texto si es necesario */
+  text-align: center;
 }
 
 .footer .content {
   display: flex;
-  max-width: 50%; /* Define un ancho máximo */
+  max-width: 50%; 
   width: 100%;
-  margin-left: auto; /* Centra horizontalmente */
-  margin-right: auto; /* Centra horizontalmente */
-  justify-content: space-between; /* Distribuir elementos internos */
-  align-items: flex-start; /* Mantén la alineación superior */
+  margin-left: auto; 
+  margin-right: auto;
+  justify-content: space-between; 
+  align-items: flex-start;
 }
 
 .footer .desktop-menu {
@@ -317,21 +357,21 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start; /* Corrige la alineación */
-  text-align: left; /* Asegúrate de que el texto esté alineado al inicio */
+  align-items: flex-start;
+  text-align: left; 
 }
 
 .footer .desktop-menu .menu-style-2 {
-  text-align: left; /* Alinea el texto a la izquierda */
-  margin: 10px; /* Margen entre los bloques de menú */
+  text-align: left; 
+  margin: 10px;
 }
 
 .footer .desktop-menu .menu-style-2 h3 {
-  width: auto; /* Cambiar a auto para ajustarse al contenido */
-  height: auto; /* Cambiar a auto para ajustarse al contenido */
+  width: auto;
+  height: auto; 
   padding: 10px 0px;
   gap: 10px;
-  opacity: 1; /* Asegúrate de que sea visible */
+  opacity: 1; 
   font-size: 20px;
   margin-bottom: 10px; 
 }
@@ -348,12 +388,12 @@ button:hover {
 }
 
 .footer .row .block {
-  display: flex; /* Flex para alinear símbolo y texto */
-  color: #ecf0f1; /* Color del texto */
+  display: flex; 
+  color: #ecf0f1; 
 }
 
 .footer .row .simbolo {
-  margin-right: 10px; /* Espacio entre el símbolo y la dirección */
+  margin-right: 10px;
 }
 
 .footer .row .adress {
